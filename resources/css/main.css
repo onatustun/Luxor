@@ -1,0 +1,21 @@
+main {
+    position: fixed;
+    top: 17.5%;
+    width: 100%;
+}
+
+.page {
+    width: 100%;
+}
+
+.page-content {
+    width:  100%;
+}
+
+#my-flights {
+    display: none;
+}
+
+#account {
+    display: none;
+}
