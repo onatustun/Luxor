@@ -1,0 +1,116 @@
+#page-loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/resources/css/css-media/user-portal-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    z-index:101
+}
+
+#user-form {
+    position: absolute;
+    width: 80%;
+    max-width: 22.5rem;
+    height: 17rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--white-75);
+    border-radius: 1.25rem;
+    top: 25%;
+    box-shadow: 0 0 0.6rem var(--black-10);
+    display: none;
+    z-index: 99;
+}
+
+#user-toggle-redirect span {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--black);
+    cursor: text;
+}
+
+#user-redirect {
+    color: var(--bright-blue) !important;
+    text-decoration: underline;
+    cursor: pointer !important;
+    transition: 0.3s all ease;
+}
+
+#user-redirect:hover {
+    color: var(--dark-blue) !important;
+}
+
+.input-label-button {
+    position: relative;
+    background-color: var(--bright-blue-75);
+    height: 2.5rem;
+    width: 90%;
+    border-radius: 0.625rem;
+    box-shadow: 0 0 0.6rem var(--black-10) inset;
+}
+
+.user-input {
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1rem;
+    color: var(--white);
+    cursor: text;
+}
+
+.user-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.7rem;
+    font-size: 1rem;
+    color: var(--white);
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.user-input:focus ~ .user-label,
+.user-input:valid ~ .user-label {
+    opacity: 0%;
+    font-size: 0.8rem;
+}
+
+#user-submit {
+    width: 90%;
+    background-color: var(--dark-blue);
+    height: 3rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0 0.6rem var(--white-10) inset, 0 0 0.6rem var(--black-10);
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--white);
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+#user-submit:hover {
+    letter-spacing: 0.075rem;
+    box-shadow: 0 0 0.6rem var(--white-10) inset, 0 0 2.4rem var(--white-10) inset;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+#guest-option {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--sky-blue);
+    cursor: pointer;
+    transition: 0.2s all ease;
+}
+
+#guest-option:hover {
+    text-decoration: underline;
+    color: var(--bright-blue-75);
+}
