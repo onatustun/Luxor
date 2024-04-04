@@ -1,6 +1,5 @@
 :root {
     --white: #FBFBFE;
-    --light-gray: #E9EAEC;
     --sky-blue: #7BCEF8;
     --bright-blue: #00A6FB;
     --dark-blue: #0D608B;
@@ -40,6 +39,8 @@ body {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     cursor: default;
+    background: none;
+    color: none;
 }
 
 *::-webkit-scrollbar {
