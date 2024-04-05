@@ -14,4 +14,9 @@ header {
     aspect-ratio: 281 / 126;
     filter: drop-shadow(0 0 0.8rem rgba(26, 26, 26, 0.1));
     cursor: pointer;
+    fill: var(--bright-blue);
+}
+
+#luxor-logo path {
+    cursor: pointer;
 }

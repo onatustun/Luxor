@@ -2,7 +2,7 @@ nav {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 3.75rem;
+    height: 3.5rem;
     display: flex;
     box-shadow: 0 0 0.8rem rgba(26, 26, 26, 0.125);
     z-index: 100;
@@ -28,6 +28,7 @@ nav {
     padding: 0.6rem 0 0.5rem 0;
     border: none;
     cursor: pointer;
+    transition: 0.3s all ease;
 }
 
 .nav-icons {
@@ -37,16 +38,10 @@ nav {
     background-repeat: no-repeat;
     background-size: contain;
     cursor: pointer;
+    fill: var(--dark-blue);
+    transition: 0.3s all ease;
 }
 
-#plane {
-    background-image: url(css-media/plane.svg);
-}
-
-#calendar {
-    background-image: url(css-media/calendar.svg);
-}
-
-#user {
-    background-image: url(css-media/user.svg);
+.nav-icons path{
+    cursor: pointer;
 }

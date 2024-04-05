@@ -1,7 +1,7 @@
 $(document).ready(function () {
     const routeTypes = {
-        oneWay: "One-Way",
-        roundTrip: "Round-Trip"
+        oneWay: 'One-Way',
+        roundTrip: 'Round-Trip'
     }
     const routeButton = $('.route-button')
     const selectedRoute = $('#selected-route')
