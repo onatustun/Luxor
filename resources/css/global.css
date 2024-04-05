@@ -131,7 +131,7 @@ summary {
 button:focus,
 button:active {
     outline: none;
-    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 166, 251, 0.1);
 }
 
 .clearfix::after {
