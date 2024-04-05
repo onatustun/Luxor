@@ -1,12 +1,12 @@
-var searchInput = $('.location-input');
+$(document).ready(function () {
+    var searchInput = $('.location-input');
 
-document.addEventListener('DOMContentLoaded', function () {
-    var autocomplete = new google.maps.places.Autocomplete(searchInput, {
-        types: ['airport'],
-        componentRestrictions: { country: 'us' }
+    var autocomplete = new google.maps.places.Autocomplete(searchInput[0], {
+        types: ['airport']
     });
 
     autocomplete.addListener('place_changed', function () {
         var near_place = autocomplete.getPlace();
+        console.log(near_place);
     });
 });
