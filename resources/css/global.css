@@ -128,12 +128,10 @@ summary {
     padding: 0;
 }
 
-button:focus {
-    outline: none;
-}
-
+button:focus,
 button:active {
     outline: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .clearfix::after {
