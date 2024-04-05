@@ -34,7 +34,7 @@
     transition: all 0.25s ease;
 }
 
-#form-container{
+#form-container {
     padding: 1.5rem;
 }
 
@@ -85,13 +85,13 @@
     width: 100%;
     padding: 1rem;
     cursor: pointer;
-    font-size:1rem;
+    font-size: 1rem;
     color: var(--dark-blue);
     transition: all 0.2s ease;
     background-color: var(--white);
 }
 
-.active-route{
+.active-route {
     background-color: var(--sky-blue);
 }
 
@@ -101,7 +101,7 @@
     color: var(--black);
 }
 
-#locations{
+#locations {
     width: 100%;
     height: 6rem;
     display: flex;
@@ -110,20 +110,20 @@
     position: relative;
 }
 
-.location-button{
+.location-button {
     width: 100%;
     height: 50%;
     border: 0.1rem solid var(--sky-blue);
     color: var(--dark-blue);
     text-align: left;
-    padding-left:0.8rem;
+    padding-left: 0.8rem;
     word-spacing: 0.5rem;
     cursor: pointer;
     background-color: var(--white);
     position: relative;
 }
 
-.location-button:last-child{
+.location-button:last-child {
     border-top: none;
 }
 
@@ -146,17 +146,71 @@
     color: var(--dark-blue);
 }
 
-#departure-return{
+#departure-return {
     width: 100%;
     border: 0.1rem solid var(--sky-blue);
     color: var(--dark-blue);
     height: 2.5rem;
     margin-top: 1.5rem;
     text-align: left;
-    padding-left:0.8rem;
+    padding-left: 0.8rem;
     word-spacing: 0.5rem;
     font-size: 1rem;
     cursor: pointer;
     background-color: var(--white);
 }
 
+#departure-return-form {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    overflow-y: hidden;
+    transition: all 0.6s ease;
+    z-index: 100;
+    padding: 2rem 0rem;
+    display: none;
+}
+
+#departure-return-content {
+    position: relative;
+}
+
+#hamburger-menu {
+    cursor: pointer;
+    width: fit-content;
+    position: absolute;
+    right: 0rem;
+    top:0rem;
+}
+
+#hamburger-menu div {
+    width: 1.563rem;
+    height: 0.125rem;
+    background-color: var(--black);
+    margin: 0.75rem 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#hamburger-menu div {
+    transform: translate(0, 8px) rotate(-45deg) scale(1.2);
+}
+
+#hamburger-menu div:last-child {
+    transform: translate(0, -6px) rotate(45deg) scale(1.2);
+}
+
+#days{
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid black;
+    margin-top:3.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+#days li{
+    font-size:1.1rem
+}
