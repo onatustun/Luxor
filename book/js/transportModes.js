@@ -19,5 +19,15 @@ $(document).ready(function() {
             $(this).css('color', 'var(--white)')
             highlightedTransport.css('left', transportPosition)
         }
+
+        if (selectedIndex === 3) {
+            $('#selected-route').hide()
+            $('#locations').css('margin-top','0')
+            $('#departure-return').html('Departure')
+        } else {
+            $('#selected-route').show()
+            $('#locations').css('margin-top','')
+            $('#departure-return').html('Departure - Return')
+        }
     })
 })
