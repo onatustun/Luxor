@@ -4,6 +4,7 @@
     flex-direction: column;
     max-width: 600px;
     position: relative;
+    background-color: var(--white);
 }
 
 #transport-modes {
@@ -50,6 +51,7 @@
     position: relative;
     align-self: self-start;
     cursor: pointer;
+    background-color: var(--white);
 }
 
 #selected-route::after {
@@ -181,7 +183,7 @@
     width: fit-content;
     position: absolute;
     right: 0rem;
-    top:0rem;
+    top: 0rem;
 }
 
 #hamburger-menu div {
@@ -201,16 +203,49 @@
     transform: translate(0, -6px) rotate(45deg) scale(1.2);
 }
 
-#days{
+#days {
     width: 100%;
     height: fit-content;
     padding-bottom: 0.5rem;
     border-bottom: 0.1rem solid black;
-    margin-top:3.5rem;
+    margin-top: 3.5rem;
     display: flex;
     justify-content: space-around;
 }
 
-#days li{
-    font-size:1.1rem
+#days li {
+    font-size: 1.1rem
+}
+
+#switch {
+    height: 60%;
+    aspect-ratio: 1;
+    position: absolute;
+    z-index: 100;
+    background-color: var(--white);
+    border: 0.1rem solid var(--sky-blue);
+    border-radius: 50%;
+    cursor: pointer;
+    right: 1.2rem;
+    top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s all ease;
+}
+
+#switch svg {
+    fill: var(--dark-blue);
+    width: 70%;
+    aspect-ratio: 1;
+    transform: rotate(90deg);
+}
+
+#switch svg,
+#switch path {
+    cursor: pointer;
+}
+
+.location-input:focus {
+    cursor: text;
 }

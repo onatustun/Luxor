@@ -1,5 +1,9 @@
 $(document).ready(function () {
     const locationInput = $('.location-input')
+    const fromInput = $('input[name="from-location"]')
+    const toInput = $('input[name="to-location"]')
+    const fromLabel = fromInput.siblings('.location-label')
+    const toLabel = toInput.siblings('.location-label')
 
     function resetLabel(label) {
         label.css({
@@ -32,10 +36,6 @@ $(document).ready(function () {
     function locationOutsideClick() {
         $(document).click(function (locationClick) {
             const locationTarget = $(locationClick.target)
-            const fromInput = $('input[name="from-location"]')
-            const toInput = $('input[name="to-location"]')
-            const fromLabel = fromInput.siblings('.location-label')
-            const toLabel = toInput.siblings('.location-label')
 
             if (!locationTarget.is('.location-input') && !locationTarget.is('.location-label')) {
                 if (fromInput.val() === '' && toInput.val() === '') {
@@ -53,6 +53,38 @@ $(document).ready(function () {
             }
         })
     }
+
+    let rotationCount = 0
+
+    $('#switch').click(function () {
+        const fromValue = fromInput.val()
+        const toValue = toInput.val()
+
+        fromInput.fadeTo(150, 0);
+        toInput.fadeTo(150, 0, function () {
+            fromInput.val(toValue).fadeTo(150, 1);
+            toInput.val(fromValue).fadeTo(150, 1);
+        });
+
+        if (fromInput.val() !== '') {
+            fromLabel.css({
+                'font-size': '0.8rem',
+                'top': '0.2rem',
+                'opacity': '0.5'
+            })
+        }
+
+        if (toInput.val() !== '') {
+            toLabel.css({
+                'font-size': '0.8rem',
+                'top': '0.2rem',
+                'opacity': '0.5'
+            })
+        }
+
+        rotationCount += 180
+        $(this).css('transform', 'rotate(' + rotationCount + 'deg)')
+    })
 
     locationInsideClick()
     locationOutsideClick()
