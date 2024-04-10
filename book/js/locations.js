@@ -60,31 +60,36 @@ $(document).ready(function () {
         const fromValue = fromInput.val()
         const toValue = toInput.val()
 
-        fromInput.fadeTo(150, 0);
+        fromInput.fadeTo(150, 0)
         toInput.fadeTo(150, 0, function () {
-            fromInput.val(toValue).fadeTo(150, 1);
-            toInput.val(fromValue).fadeTo(150, 1);
-        });
+            fromInput.val(toValue).fadeTo(150, 1)
+            toInput.val(fromValue).fadeTo(150, 1)
 
-        if (fromInput.val() !== '') {
-            fromLabel.css({
-                'font-size': '0.8rem',
-                'top': '0.2rem',
-                'opacity': '0.5'
-            })
-        }
+            if (fromInput.val() !== '') {
+                fromLabel.css({
+                    'font-size': '0.8rem',
+                    'top': '0.2rem',
+                    'opacity': '0.5'
+                })
+            } else {
+                resetLabel(fromLabel)
+            }
 
-        if (toInput.val() !== '') {
-            toLabel.css({
-                'font-size': '0.8rem',
-                'top': '0.2rem',
-                'opacity': '0.5'
-            })
-        }
+            if (toInput.val() !== '') {
+                toLabel.css({
+                    'font-size': '0.8rem',
+                    'top': '0.2rem',
+                    'opacity': '0.5'
+                })
+            } else {
+                resetLabel(toLabel)
+            }
+        })
 
         rotationCount += 180
         $(this).css('transform', 'rotate(' + rotationCount + 'deg)')
     })
+
 
     locationInsideClick()
     locationOutsideClick()
