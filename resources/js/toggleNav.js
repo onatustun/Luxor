@@ -15,6 +15,7 @@ $(document).ready(function () {
 
     pageButtons.click(function () {
         const newPage = $(this).data('page-index')
+        $('.quantity-changer').removeClass('quantity-click')
         if (activePage !== newPage) {
             navIcons.css('fill', '')
             pageButtons.css('color', '')

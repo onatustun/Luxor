@@ -20,7 +20,7 @@ $(document).ready(function () {
     })
 
     $('.quantity-changer').click(function () {
-        $(this).removeClass('quantity-click')
+        $('.quantity-changer').removeClass('quantity-click')
         void this.offsetWidth
         $(this).addClass('quantity-click')
     })
