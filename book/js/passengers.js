@@ -1,13 +1,8 @@
 $(document).ready(function () {
     let quantity = 1
-    const quantityTypes = {
-        passengers: 'Passengers',
-        weight: 'Weight(KG)'
-    }
-    let selectedQuantity = quantityTypes.passengers
 
     function updateQuantityCount() {
-        $('#quantity-type').html(selectedQuantity + ' ' + quantity)
+        $('#quantity-value').html(quantity)
     }
 
     updateQuantityCount()

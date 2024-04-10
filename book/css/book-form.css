@@ -200,7 +200,7 @@
     margin-top: 1.5rem;
 }
 
-#quantity-type {
+#quantity {
     width: 10rem;
     border: 0.1rem solid var(--sky-blue);
     color: var(--dark-blue);
@@ -277,4 +277,17 @@
     100% {
         fill: var(--dark-blue);
     }
+}
+
+#submit{
+    width: 100%;
+    background-color: var(--bright-blue);
+    height: 3rem;
+    margin-top:1.5rem;
+    border-radius: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: var(--white);
 }
