@@ -194,3 +194,87 @@
     cursor: pointer;
     background-color: var(--white);
 }
+
+#quantities {
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+#quantity-type {
+    width: 10rem;
+    border: 0.1rem solid var(--sky-blue);
+    color: var(--dark-blue);
+    height: 2.5rem;
+    display: flex;
+    padding: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    align-self: self-start;
+    cursor: pointer;
+    background-color: var(--white);
+    word-spacing: 1rem;
+    border-right: none;
+    border-left: none;
+}
+
+.quantity-changer {
+    height: 2.5rem;
+    aspect-ratio: 1;
+    background-color: var(--white);
+    border: 0.1rem solid var(--sky-blue);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-changer svg {
+    width: 45%;
+    aspect-ratio: 1;
+    fill: var(--dark-blue);
+    cursor: pointer;
+}
+
+.quantity-changer svg path {
+    cursor: pointer;
+}
+
+.quantity-click svg {
+    animation: quantityClickSvg 0.3s alternate;
+}
+
+.quantity-click {
+    animation: quantityClick 0.3s alternate;
+}
+
+@keyframes quantityClick {
+    0% {
+        background-color: var(--white);
+        border: 0.1rem solid var(--sky-blue);
+    }
+
+    50% {
+        background-color: var(--dark-blue);
+        border: 0.1rem solid var(--dark-blue);
+    }
+
+    100% {
+        background-color: var(--white);
+        border: 0.1rem solid var(--sky-blue);
+    }
+}
+
+@keyframes quantityClickSvg {
+    0% {
+        fill: var(--dark-blue);
+    }
+
+    50% {
+        fill: var(--white);
+    }
+
+    100% {
+        fill: var(--dark-blue);
+    }
+}
