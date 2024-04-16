@@ -54,7 +54,7 @@ $(document).ready(function () {
         })
     }
 
-    let rotationCount = 0
+    let rotationCount = 90
 
     $('#switch').click(function () {
         const fromValue = fromInput.val()
@@ -87,7 +87,7 @@ $(document).ready(function () {
         })
 
         rotationCount += 180
-        $(this).css('transform', 'rotate(' + rotationCount + 'deg)')
+        $(this).find('svg').css('transform', 'rotate(' + rotationCount + 'deg)')
     })
 
 
