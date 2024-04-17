@@ -1,6 +1,15 @@
-#luxor-logo {
+header {
     position: fixed;
-    top:1.5rem;
+    z-index: 100;
+    width: 100%;
+    height: 5rem;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#luxor-logo {
     height: 3.5rem;
     aspect-ratio: 281 / 126;
     fill: var(--bright-blue);
