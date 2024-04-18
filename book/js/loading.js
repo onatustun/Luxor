@@ -1,7 +1,7 @@
 $(document).ready(function () {
     setTimeout(function () {
         $('#loading-form').fadeIn(400).css('display', 'flex')
-    }, 1600)
+    }, 1550)
 
     setTimeout(function () {
         $('#loading-logo').css({
@@ -12,6 +12,10 @@ $(document).ready(function () {
     }, 1500)
     
     $('#loading-submit').click(function () {
-        $('#loading-screen').fadeOut(400)
+        $('#loading-screen').css('opacity','0%')
+
+        setTimeout(function () {
+            $('#loading-screen').css('display','none')
+        }, 401)
     })
 })

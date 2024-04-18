@@ -3,8 +3,6 @@
     max-width: 600px;
     position: relative;
     background-color: var(--white);
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
 }
 
 #transport-modes {
@@ -282,13 +280,18 @@
     font-weight: 500;
 }
 
+
+
 #loading-screen{
     width: 100vw;
     height: 100vh;
     background-image: url(/resources/css/css-media/background.jpg);
-    background-position: center;
+    background-position:right;
     background-size: cover;
     z-index: 1000;
+    transition:1s all ease;
+    animation: 120s ease loadingBackground;
+    transition: 0.4s all ease;
 }
 
 #loading-logo{
@@ -304,6 +307,16 @@
     left: 50%;
     transform: translateX(-50%);
     top:20%;
+}
+
+@keyframes loadingBackground {
+    0% {
+        background-position:left;
+    }
+
+    100% {
+        background-position:center;
+    }
 }
 
 @keyframes loadingLogo {
@@ -330,6 +343,8 @@
         height: 4rem;
     }
 }
+
+
 
 #loading-form{
     border: 0.13rem solid var(--white);
@@ -399,3 +414,4 @@
     padding-left: 0.4rem;
     padding-right: 0.4rem;
 }
+
