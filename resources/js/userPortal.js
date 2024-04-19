@@ -15,6 +15,10 @@ $(document).ready(function () {
         $('#page-loader').css('display', 'flex')
 
         setTimeout(function () {
+            $('#page-loader').css('background-image', 'url(/resources/css/css-media/user-portal-bg-blur.jpg)')
+        }, 3999)
+
+        setTimeout(function () {
             $('#user-form').fadeIn(300).css('display', 'flex')
         }, 1500)
 
