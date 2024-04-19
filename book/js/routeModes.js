@@ -26,8 +26,14 @@ $(document).ready(function () {
         document.head.appendChild(style)
     }
 
+    function borderRadius() {
+        const radius = routeToggle ? '0.625rem' : '0rem';
+        selectedRoute.css('border-radius', radius);
+    }
+
     function toggleRouteMode() {
         arrowRotate()
+        borderRadius()
         $('#route-modes').fadeToggle(250)
         routeToggle = !routeToggle
     }
