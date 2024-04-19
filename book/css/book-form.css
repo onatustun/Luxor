@@ -29,6 +29,8 @@
     background-color: var(--bright-blue);
     height: 2.5rem;
     transition: all 0.3s ease;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
 }
 
 #form-container {
@@ -46,6 +48,10 @@
     cursor: pointer;
     background-color: var(--white);
     font-size: 1rem;
+    border-radius: 0.625rem;
+    transition: 0.3s all ease;
+    border-top-left-radius: 0.625rem !important;
+    border-top-right-radius: 0.625rem !important;
 }
 
 #selected-route::after {
@@ -71,6 +77,8 @@
     height: 5rem;
     position: absolute;
     z-index: 100;
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
 }
 
 .route-button {
@@ -83,6 +91,11 @@
     color: var(--dark-blue);
     transition: all 0.2s ease;
     background-color: var(--white);
+}
+
+.route-button:last-child {
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
 }
 
 .active-route {
@@ -110,8 +123,15 @@
     font-size: 1rem;
 }
 
-.location-button:last-child {
+#from-button {
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+}
+
+#to-button {
     border-top: none;
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
 }
 
 .location-input {
@@ -174,6 +194,7 @@
     font-size: 1rem;
     cursor: pointer;
     background-color: var(--white);
+    border-radius: 0.625rem;
 }
 
 #quantities {
@@ -210,12 +231,16 @@
     justify-content: center;
 }
 
-.quantity-changer:first-child {
+#sub {
     border-right: none !important;
+    border-top-left-radius: 0.625rem;
+    border-bottom-left-radius: 0.625rem;
 }
 
-.quantity-changer:last-child {
+#add {
     border-left: none !important;
+    border-top-right-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
 }
 
 .quantity-changer svg {
