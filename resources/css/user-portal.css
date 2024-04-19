@@ -9,8 +9,20 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    animation: bgBlur 2s ease 2s;
+    animation-iteration-count: 1;
     top: 0;
-    z-index:101
+    z-index: 101
+}
+
+@keyframes bgBlur {
+    0% {
+        background-image: url(/resources/css/css-media/user-portal-bg.jpg);
+    }
+
+    100% {
+        background-image: url(/resources/css/css-media/user-portal-bg-blur.jpg);
+    }
 }
 
 #user-form {
@@ -76,8 +88,8 @@
     transition: 0.3s;
 }
 
-.user-input:focus ~ .user-label,
-.user-input:valid ~ .user-label {
+.user-input:focus~.user-label,
+.user-input:valid~.user-label {
     opacity: 0%;
     font-size: 0.8rem;
 }
