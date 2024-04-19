@@ -9,8 +9,10 @@ $(document).ready(function () {
         signUp: 'Sign Up'
     }
 
+    let userToggle = true
+
     function displayUserForm() {
-        $('#page-loader').css('display','flex')
+        $('#page-loader').css('display', 'flex')
 
         setTimeout(function () {
             $('#user-form').fadeIn(300).css('display', 'flex')
@@ -47,4 +49,16 @@ $(document).ready(function () {
     $('#account-checker').html(`${accountCheckerOptions.alreadyHaveAccount}?`)
     $('#user-redirect').html(userRedirectOptions.login)
     $('#user-submit').html(userRedirectOptions.signUp)
+
+    $('#user-redirect').click(function () {
+        const accountCheckerHTML = userToggle ? accountCheckerOptions.noAccount : accountCheckerOptions.alreadyHaveAccount
+        const redirectButtonHTML = userToggle ? userRedirectOptions.signUp : userRedirectOptions.login
+        const submitButtonHTML = userToggle ? userRedirectOptions.login : userRedirectOptions.signUp
+    
+        $('#account-checker').html(`${accountCheckerHTML}?`)
+        $('#user-redirect').html(redirectButtonHTML)
+        $('#user-submit').html(submitButtonHTML)
+    
+        userToggle = !userToggle
+    })
 })
