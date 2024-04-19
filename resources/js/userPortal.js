@@ -54,11 +54,31 @@ $(document).ready(function () {
         const accountCheckerHTML = userToggle ? accountCheckerOptions.noAccount : accountCheckerOptions.alreadyHaveAccount
         const redirectButtonHTML = userToggle ? userRedirectOptions.signUp : userRedirectOptions.login
         const submitButtonHTML = userToggle ? userRedirectOptions.login : userRedirectOptions.signUp
-    
-        $('#account-checker').html(`${accountCheckerHTML}?`)
-        $('#user-redirect').html(redirectButtonHTML)
-        $('#user-submit').html(submitButtonHTML)
-    
+
+        $('#account-checker').fadeOut(150, function () {
+            $(this).html(`${accountCheckerHTML}?`).fadeIn(150)
+        })
+        $('#user-redirect').fadeOut(150, function () {
+            $(this).html(redirectButtonHTML).fadeIn(150)
+        })
+        $('#user-submit').fadeOut(150, function () {
+            $(this).html(submitButtonHTML).fadeIn(150)
+        })
+
         userToggle = !userToggle
+    })
+
+    $('#guest-option').click(function (){
+        $('#page-loader').fadeOut(300)
+    })
+
+    $("#user-submit").click(function(event) {
+        event.preventDefault();
+        
+        if ($("#user-form")[0].checkValidity()) {
+            $('#page-loader').fadeOut(300)
+        } else {
+            $("#user-form")[0].reportValidity()
+        }
     })
 })

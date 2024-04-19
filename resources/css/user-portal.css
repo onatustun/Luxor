@@ -95,7 +95,7 @@
 }
 
 #user-submit:hover {
-    letter-spacing: 0.15rem;
+    letter-spacing: 0.075rem;
     box-shadow: 0 0 0.6rem var(--white-10) inset, 0 0 2.4rem var(--white-10) inset;
     font-size: 1.25rem;
     font-weight: 500;
