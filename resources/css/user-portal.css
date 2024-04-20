@@ -70,8 +70,10 @@
 }
 
 .user-input {
-    width: 100%;
+    width: calc(100% - 1.4rem);
+    height: calc(2.5rem - 1.4rem);
     padding: 0.7rem;
+    border-radius: 0.625rem;
     font-size: 1rem;
     color: var(--white);
     cursor: text;
@@ -81,7 +83,11 @@
     position: absolute;
     top: 0;
     left: 0;
+    width: calc(100% - 1.4rem);
+    height: calc(2.5rem - 1.4rem);
+    border-radius: 0.625rem;
     padding: 0.7rem;
+    text-align: left;
     font-size: 1rem;
     color: var(--white);
     pointer-events: none;
@@ -92,6 +98,8 @@
 .user-input:valid~.user-label {
     opacity: 0%;
     font-size: 0.8rem;
+    top: 0.1rem;
+    letter-spacing: -0.1rem;
 }
 
 #user-submit {
