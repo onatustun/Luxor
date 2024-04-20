@@ -24,7 +24,7 @@
     <script src="resources/js/toggleNav.js"></script>
     <script src="book/js/routeModes.js"></script>
     <script src="book/js/transportModes.js"></script>
-    <script src="book/js/locations.js"></script>
+    <script src="book/js/switchLocations.js"></script>
 </head>
 
 <body>
@@ -120,17 +120,27 @@
                                         </svg>
                                     </button>
                                     <div id="from-button" class="location-button">
-                                        <input class="location-input" type="text" name="from-location">
+                                        <input class="location-input" type="text" name="from-location" required>
                                         <label class="location-label">From</label>
                                     </div>
                                     <div id="to-button" class="location-button">
-                                        <input class="location-input" type="text" name="to-location">
+                                        <input class="location-input" type="text" name="to-location" required>
                                         <label class="location-label">To</label>
                                     </div>
                                 </div>
 
                                 <button id="departure-return">Departure - Return</button>
 
+                                <div id="quantity-blur-bg">
+                                    <form>
+                                        <h2>Enter Weight(kg)</h2>
+                                        <input type="text" id="enter-quantity">
+                                        <div id="submit-options">
+                                            <button id="cancel" class="submit-buttons">CANCEL</button>
+                                            <button id="done" class="submit-buttons">DONE</button>
+                                        </div>
+                                    </form>
+                                </div>
                                 <div id="quantities">
                                     <button id="sub" class="quantity-changer">
                                         <svg viewBox="0 0 512 512">
@@ -138,6 +148,7 @@
                                                 d="M480,288H32c-17.673,0-32-14.327-32-32s14.327-32,32-32h448c17.673,0,32,14.327,32,32S497.673,288,480,288z" />
                                         </svg>
                                     </button>
+
                                     <button id="quantity">
                                         <span id="selected-quantity"></span>
                                         <span id="quantity-value"></span>
@@ -149,9 +160,7 @@
                                         </svg>
                                     </button>
                                 </div>
-                                <button id="submit">
-                                    Book Flight
-                                </button>
+                                <button id="submit">Book Flight</button>
                             </div>
                         </div>
                     </div>

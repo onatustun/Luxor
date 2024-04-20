@@ -40,6 +40,7 @@
     box-shadow: 0 0 0.6rem var(--black-10);
     display: none;
     z-index: 99;
+    backdrop-filter: blur(0.05rem);
 }
 
 #user-toggle-redirect span {
