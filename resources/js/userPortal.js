@@ -9,7 +9,7 @@ $(document).ready(function () {
         signUp: 'Sign Up'
     }
 
-    let userToggle = true
+    let userToggle = false
 
     function displayUserForm() {
         $('#page-loader').css('display', 'flex')
@@ -39,7 +39,7 @@ $(document).ready(function () {
         }, 700)
     }
 
-    const sessionVisit = sessionStorage.getItem('visited');
+    const sessionVisit = sessionStorage.getItem('visited')
 
     if (!sessionVisit) {
         displayUserForm()
@@ -83,7 +83,7 @@ $(document).ready(function () {
     })
 
     $("#user-submit").click(function(event) {
-        event.preventDefault();
+        event.preventDefault()
         
         if ($("#user-form")[0].checkValidity()) {
             $('#page-loader').fadeOut(300)

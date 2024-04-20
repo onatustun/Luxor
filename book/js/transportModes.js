@@ -6,7 +6,7 @@ $(document).ready(function () {
     }
     const quantityTypes = {
         passengers: 'Passengers',
-        weight: 'Weight(KG)'
+        weight: 'Weight(kg)'
     }
 
     const transportButton = $('.transport-button')
@@ -57,39 +57,39 @@ $(document).ready(function () {
     })
 
     $('#add').click(function () {
-        if (selectedQuantity === quantityTypes.passengers && quantity >= 10) {
+        if (selectedQuantity === quantityTypes.passengers && quantity >= 8) {
             return
         }
         quantity++
         updateQuantityCount()
     })
 
+    $('.submit-buttons').click(function (event) {
+        event.preventDefault()
+        var quantityInput = $('#enter-quantity').val()
+        if ($(event.target).is('#done')) {
+            if (quantityInput !== '' && !isNaN(quantityInput) && parseInt(quantityInput, 10) >= 1) {
+                quantity = parseInt(quantityInput, 10)
+                $('#quantity-blur-bg').fadeOut(400)
+                updateQuantityCount()
+            } else {
+                alert(quantityInput !== '' ? "Please enter a number equal to or above 1." : "Please enter a valid number.")
+            }
+        } else {
+            $('#quantity-blur-bg').fadeOut(400)
+        }
+    })
+    
+    $('#quantity').click(function () {
+        if (selectedQuantity === quantityTypes.weight) {
+            $('#quantity-blur-bg').fadeIn(400).css('display', 'flex')
+        }
+    })
+    
+
     $('.quantity-changer').click(function () {
         $('.quantity-changer').removeClass('quantity-click')
         void this.offsetWidth
         $(this).addClass('quantity-click')
-    })
-
-    $(document).click(function (numberClick) {
-        const numberTarget = $(numberClick.target)
-
-        if (numberTarget.is(activeQuantity)) {
-            const newQuantity = prompt('Enter ' + selectedQuantity + ' Value')
-
-            if (newQuantity !== null && newQuantity.trim() !== "") {
-                if (!isNaN(newQuantity)) {
-                    if (selectedQuantity === quantityTypes.passengers && parseFloat(newQuantity) < 1 || parseFloat(newQuantity) > 10) {
-                        alert("Please enter a valid value between 1 and 10")
-                    } else {
-                        quantity = parseFloat(newQuantity)
-                        updateQuantityCount()
-                    }
-                } else {
-                    alert("Please enter a valid value")
-                }
-            } else {
-                alert("Please enter a value")
-            }
-        }
     })
 })
