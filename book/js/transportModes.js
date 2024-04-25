@@ -70,19 +70,19 @@ $(document).ready(function () {
         if ($(event.target).is('#done')) {
             if (quantityInput !== '' && !isNaN(quantityInput) && parseInt(quantityInput, 10) >= 1) {
                 quantity = parseInt(quantityInput, 10)
-                $('#quantity-blur-bg').fadeOut(400)
+                $('#quantity-blur-bg').fadeOut(300)
                 updateQuantityCount()
             } else {
-                alert(quantityInput !== '' ? "Please enter a number equal to or above 1." : "Please enter a valid number.")
+                alert('Please enter a valid number equal to or above 1.')
             }
         } else {
-            $('#quantity-blur-bg').fadeOut(400)
+            $('#quantity-blur-bg').fadeOut(300)
         }
     })
     
     $('#quantity').click(function () {
         if (selectedQuantity === quantityTypes.weight) {
-            $('#quantity-blur-bg').fadeIn(400).css('display', 'flex')
+            $('#quantity-blur-bg').fadeIn(300).css('display', 'flex')
         }
     })
     

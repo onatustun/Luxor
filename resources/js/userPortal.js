@@ -9,7 +9,7 @@ $(document).ready(function () {
         signUp: 'Sign Up'
     }
 
-    let userToggle = false
+    let userToggle = true
 
     function displayUserForm() {
         $('#page-loader').css('display', 'flex')
