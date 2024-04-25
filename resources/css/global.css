@@ -67,7 +67,7 @@ body {
     -webkit-font-smoothing: antialiased;
     cursor: default;
     background: none;
-    color: none;
+    color: transparent;
 }
 
 *::-webkit-scrollbar {
@@ -82,14 +82,14 @@ body {
 
 @media (prefers-reduced-motion) {
     * {
-        transition-duration: 0;
-        animation-duration: 0;
-        -o-animation-duration: 0;
-        -o-transition-duration: 0;
-        -moz-animation-duration: 0;
-        -moz-transition-duration: 0;
-        -webkit-animation-duration: 0;
-        -webkit-transition-duration: 0;
+        transition-duration: 0s;
+        animation-duration: 0s;
+        -o-animation-duration: 0s;
+        -o-transition-duration: 0s;
+        -moz-animation-duration: 0s;
+        -moz-transition-duration: 0s;
+        -webkit-animation-duration: 0s;
+        -webkit-transition-duration: 0s;
     }
 }
 

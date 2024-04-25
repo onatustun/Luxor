@@ -222,6 +222,7 @@
 
 #quantity span {
     pointer-events: none;
+    color: var(--dark-blue);
 }
 
 .quantity-changer {
