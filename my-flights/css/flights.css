@@ -1,0 +1,99 @@
+#flight-history {
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    background-color: var(--white);
+}
+
+#history-options {
+    display: flex;
+    height: 2.5rem;
+}
+
+.history-button {
+    width: calc(100%/2);
+    color: var(--bright-blue);
+    z-index: 100;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.03rem;
+    padding: 0.6rem 0 0.5rem 0;
+    cursor: pointer;
+    border-bottom: 0.1rem solid var(--bright-blue);
+    transition: all 0.3s ease;
+}
+
+.history-button:first-of-type {
+    color: var(--white);
+}
+
+#highlighted-history {
+    width: calc(100%/2);
+    position: absolute;
+    background-color: var(--bright-blue);
+    height: 2.5rem;
+    transition: all 0.3s ease;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+}
+
+.flight-card {
+    width: 100%;
+    min-height: 145px;
+    margin-top: 15px;
+    border: 1px solid var(--sky-blue);
+    border-radius: 20px;
+    padding: 21px
+}
+
+.flight-card span {
+    color: var(--dark-blue);
+
+}
+
+.flight-card svg {
+    width: 20px;
+    fill: var(--dark-blue);
+}
+
+.half {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.half:first-of-type {
+    padding-bottom: 14px;
+}
+
+.half:last-of-type {
+    padding-top: 14px;
+    flex-direction: column;
+    text-align: left;
+
+    align-items: start;
+}
+
+.half div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.half div:last-of-type {
+    text-align: right;
+}
+
+hr {
+    border: 1px solid var(--dark-blue);
+}
+
+.iata {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.iata-city {
+    font-weight: 500;
+    font-size: 14px;
+}

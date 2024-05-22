@@ -8,6 +8,7 @@
     align-items: center;
     max-width: 17.875rem;
     padding: 14px 17px;
+    width: 100%;
 }
 
 .account-buttons {
@@ -19,12 +20,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 1.875rem;
+    cursor: pointer;
 }
 
 .account-buttons::after {
     content: "";
     transform: rotate(-45deg);
-    width: 0.5rem;
+    width: 0.375rem;
     aspect-ratio: 1;
     right: 0;
     border-bottom: 0.15rem solid var(--dark-blue);
@@ -36,4 +39,5 @@
     color: #FF4444;
     font-size:13px;
     font-weight:400;
+    cursor: pointer;
 }
