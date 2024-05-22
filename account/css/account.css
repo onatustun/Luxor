@@ -1,0 +1,39 @@
+#account-options {
+    border: 0.01rem solid var(--sky-blue);
+    border-radius: 14px;
+    height: 8.813rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 17.875rem;
+    padding: 14px 17px;
+}
+
+.account-buttons {
+    font-weight: 500;
+    font-size: 13.6px;
+    width: 100%;
+    color: var(--dark-blue);
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.account-buttons::after {
+    content: "";
+    transform: rotate(-45deg);
+    width: 0.5rem;
+    aspect-ratio: 1;
+    right: 0;
+    border-bottom: 0.15rem solid var(--dark-blue);
+    border-right: 0.15rem solid var(--dark-blue);
+    transition: all 0.3s ease;
+}
+
+#log-out {
+    color: #FF4444;
+    font-size:13px;
+    font-weight:400;
+}
