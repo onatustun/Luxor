@@ -1,19 +1,19 @@
 #account-options {
-    border: 0.01rem solid var(--sky-blue);
-    border-radius: 14px;
+    border: 0.063rem solid var(--sky-blue);
+    border-radius: 0.875rem;
     height: 8.813rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     max-width: 17.875rem;
-    padding: 14px 17px;
-    width: 100%;
+    padding: 0.875rem 1.063rem;
+    width: 90%;
 }
 
 .account-buttons {
     font-weight: 500;
-    font-size: 13.6px;
+    font-size: 0.85rem;
     width: 100%;
     color: var(--dark-blue);
     text-align: left;
@@ -37,7 +37,7 @@
 
 #log-out {
     color: #FF4444;
-    font-size:13px;
+    font-size:0.813rem;
     font-weight:400;
     cursor: pointer;
 }

@@ -4,6 +4,7 @@ $(document).ready(function () {
         2: 'calc(100% / 3)',
         3: 'calc(100% * 2 / 3)'
     }
+    
     const quantityTypes = {
         passengers: 'Passengers',
         weight: 'Weight(kg)'
