@@ -41,10 +41,10 @@ $(document).ready(function () {
 
     const sessionVisit = sessionStorage.getItem('visited')
 
-    if (!sessionVisit) {
+    if (sessionVisit !== "1") {
         displayUserForm()
-        sessionStorage.setItem('visited', 1)
-    } else {
+        sessionStorage.setItem('visited', "1")
+      } else {
         $('#luxor-logo').css({
             'display': 'block',
             'height': '3.5rem',
@@ -91,4 +91,9 @@ $(document).ready(function () {
             $("#user-form")[0].reportValidity()
         }
     })
+
+    $("#log-out").click(function() {
+        sessionStorage.setItem('visited', "0")
+        location.reload()
+      })
 })
