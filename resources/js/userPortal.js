@@ -35,6 +35,10 @@ $(document).ready(function () {
         }, 1500)
 
         setTimeout(function () {
+            $('#special-deal').show().css('display', 'flex')
+        }, 700)
+
+        setTimeout(function () {
             $('#page-content').show()
         }, 700)
     }
@@ -80,6 +84,14 @@ $(document).ready(function () {
 
     $('#guest-option').click(function (){
         $('#page-loader').fadeOut(300)
+    })
+
+    $('#continue').click(function (){
+        $('#special-deal').fadeOut(300)
+    })
+
+    $('#buybuy').click(function (){
+        $('#special-deal').fadeOut(300)
     })
 
     $("#user-submit").click(function(event) {

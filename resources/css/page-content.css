@@ -10,3 +10,118 @@
     align-items: center;
     display: none;
 }
+
+#special-deal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://images.unsplash.com/photo-1544111795-fe8b9def73f6?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG5ldyUyMHlvcmslMjBuaWdodHxlbnwwfHwwfHx8MA%3D%3D);
+    box-shadow: 0 5rem 20rem -10rem var(--sky-blue) inset;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    flex-direction: column;
+}
+
+#new-york {
+    position: fixed;
+    width: 90%;
+    max-width: 22rem;
+    height: 40%;
+    background-position: center;
+    background-size: 200%;
+    background-image: url(https://images.unsplash.com/photo-1544111795-fe8b9def73f6?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG5ldyUyMHlvcmslMjBuaWdodHxlbnwwfHwwfHx8MA%3D%3D);
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow:
+        0 0 0.8rem var(--black-50),
+        0 0 2.5rem var(--black-25),
+        0 0 5.5rem var(--black-25),
+        0 0 0.8rem var(--white-25) inset,
+        0 0 5.5rem var(--white-10) inset;
+    border-radius: 3.5rem;
+    z-index: 102;
+    top: 17.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+#new-york:hover {
+    background-size: 250%;
+    box-shadow:
+        0 0 1.8rem var(--black-50),
+        0 0 3.5rem var(--black-25),
+        0 0 6.5rem var(--black-25),
+        0 0 1.8rem var(--white-50) inset,
+        0 0 2.8rem var(--white-25) inset,
+        0 0 3.5rem var(--white-10) inset;
+}
+
+#ny-blur {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    flex-direction: column;
+    backdrop-filter: blur(4px);
+}
+
+#new-york h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+}
+
+#new-york h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+#buybuy {
+    width: 100%;
+    max-width: 10rem;
+    background-color: var(--bright-blue);
+    height: 2.5rem;
+    margin-top: 1.5rem;
+    border-radius: 0.6rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--white);
+    cursor: pointer;
+    transition: 0.5s all ease;
+    z-index: 103;
+    position: absolute;
+    bottom: 25%;
+}
+
+#buybuy:hover {
+    box-shadow:
+        0 0 0.8rem var(--bright-blue-50),
+        0 0 2.5rem var(--bright-blue-25),
+        0 0 5.5rem var(--bright-blue-10);
+    letter-spacing: 0.1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+#continue {
+    color: var(--white);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 103;
+    bottom: 15%;
+    cursor: pointer;
+}

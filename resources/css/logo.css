@@ -1,7 +1,7 @@
 #luxor-logo {
     display: none;
     position: fixed;
-    z-index: 102;
+    z-index: 112;
     top: 20%;
     left: 50%;
     transform: translateX(-50%);

@@ -39,15 +39,62 @@
     border: 1px solid var(--sky-blue);
     border-radius: 20px;
     padding: 21px;
+    background-image: url(https://www.colorhexa.com/fbfbfe.png);
+    background-position: center;
+    background-size: 125% ;
+    transition: 0.5s all ease;
+    cursor: pointer;
+    > * * {
+        cursor: pointer; 
+        color: var(--dark-blue);
+        transition: 0.5s all ease;
+    }
+
+    > * {
+        cursor: pointer; 
+        color: var(--dark-blue);
+        transition: 0.5s all ease;
+    }
+
+    hr {
+        border: 1px solid var(--dark-blue);
+        transition: 0.5s all ease;
+    }
+
+    svg {
+        transition: none;
+        fill: var(--dark-blue);
+    }
 }
 
-.flight-card span {
-    color: var(--dark-blue);
+.flight-card:hover {
+    background-image: url(https://images.unsplash.com/photo-1544111795-fe8b9def73f6?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG5ldyUyMHlvcmslMjBuaWdodHxlbnwwfHwwfHx8MA%3D%3D);
+    box-shadow:
+    0 0 1.4rem var(--black-50),
+    0 0 6.9rem var(--black-25),
+    0 0 9.6rem var(--black-10);
+    border: 1px solid var(--dark-blue);
+    background-size: 100% ;
+    
+    > * * {
+        color: var(--white); 
+    }
+
+    > * {
+        color: var(--white); 
+    }
+
+    hr {
+        border: 1px solid var(--white);
+    }
+
+    svg {
+        fill: var(--white);
+    }
 }
 
 .flight-card svg {
     width: 20px;
-    fill: var(--dark-blue);
 }
 
 .half {
@@ -74,10 +121,6 @@
     text-align: right;
 }
 
-hr {
-    border: 1px solid var(--dark-blue);
-}
-
 .iata {
     font-weight: 600;
     font-size: 24px;
@@ -99,4 +142,22 @@ hr {
 
 #previous {
     display: none;
+}
+
+.reorder {
+    width: 4.5rem;
+    background-color:var(--bright-blue);
+    height: 1.5rem;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    font-weight: 500;
+    color: var(--white);
+    box-shadow: 0px 0px 2px var(--sky-blue) inset;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
