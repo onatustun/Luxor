@@ -12,7 +12,7 @@
     animation: bgBlur 2s ease 2s;
     animation-iteration-count: 1;
     top: 0;
-    z-index: 101
+    z-index: 110
 }
 
 @keyframes bgBlur {
@@ -39,7 +39,7 @@
     top: 25%;
     box-shadow: 0 0 0.6rem var(--black-10);
     display: none;
-    z-index: 99;
+    z-index: 108;
     backdrop-filter: blur(0.05rem);
 }
 

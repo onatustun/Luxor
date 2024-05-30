@@ -13,6 +13,18 @@ $(document).ready(function () {
         })
     }
 
+    $('#buybuy').click(function () {
+        const secondPageIndex = 1
+        if (activePage !== secondPageIndex) {
+            switchPage(activePage, secondPageIndex)
+            activePage = secondPageIndex
+            navIcons.css('fill', '')
+            pageButtons.css('color', '')
+            pageButtons.eq(secondPageIndex).find(navIcons).css('fill', 'var(--bright-blue)')
+            pageButtons.eq(secondPageIndex).css('color', 'var(--bright-blue)')
+        }
+    })
+
     pageButtons.click(function () {
         const newPage = $(this).data('page-index')
         $('.quantity-changer').removeClass('quantity-click')
