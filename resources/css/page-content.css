@@ -19,7 +19,7 @@
     align-items: center;
     background-position: center;
     background-size: cover;
-    background-image: url(https://images.unsplash.com/photo-1544111795-fe8b9def73f6?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG5ldyUyMHlvcmslMjBuaWdodHxlbnwwfHwwfHx8MA%3D%3D);
+    background-image: url(css-media/new-york.png);
     box-shadow: 0 5rem 20rem -10rem var(--sky-blue) inset;
     top: 0;
     left: 0;
@@ -34,7 +34,7 @@
     height: 40%;
     background-position: center;
     background-size: 200%;
-    background-image: url(https://images.unsplash.com/photo-1544111795-fe8b9def73f6?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG5ldyUyMHlvcmslMjBuaWdodHxlbnwwfHwwfHx8MA%3D%3D);
+    background-image: url(css-media/new-york.png);
     left: 50%;
     transform: translateX(-50%);
     box-shadow:

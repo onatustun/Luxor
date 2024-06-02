@@ -39,7 +39,7 @@
     border: 1px solid var(--sky-blue);
     border-radius: 20px;
     padding: 21px;
-    background-image: url(https://www.colorhexa.com/fbfbfe.png);
+    background-image: url(/resources/css/css-media/fbfbfe.png);
     background-position: center;
     background-size: 125% ;
     transition: 0.5s all ease;
@@ -68,7 +68,7 @@
 }
 
 .flight-card:hover {
-    background-image: url(https://images.unsplash.com/photo-1544111795-fe8b9def73f6?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG5ldyUyMHlvcmslMjBuaWdodHxlbnwwfHwwfHx8MA%3D%3D);
+    background-image: url(/resources/css/css-media/new-york.png);
     box-shadow:
     0 0 1.4rem var(--black-50),
     0 0 6.9rem var(--black-25),
