@@ -4,7 +4,7 @@ $(document).ready(function () {
         2: 'calc(100% / 3)',
         3: 'calc(100% * 2 / 3)'
     }
-    
+
     const quantityTypes = {
         passengers: 'Passengers',
         weight: 'Weight(kg)'
@@ -80,13 +80,20 @@ $(document).ready(function () {
             $('#quantity-blur-bg').fadeOut(300)
         }
     })
-    
+
+    $('#departure-return').click(function () {
+        $('#departure-return-bg').fadeIn(300).css('display', 'flex')
+    })
+
+    $('#hamburger-menu').click(function () {
+        $('#departure-return-bg').fadeOut(300)
+    })
+
     $('#quantity').click(function () {
         if (selectedQuantity === quantityTypes.weight) {
             $('#quantity-blur-bg').fadeIn(300).css('display', 'flex')
         }
     })
-    
 
     $('.quantity-changer').click(function () {
         $('.quantity-changer').removeClass('quantity-click')
